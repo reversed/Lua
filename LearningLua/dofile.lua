@@ -1,0 +1,3 @@
+dofile("gc.lua")
+
+dofile()

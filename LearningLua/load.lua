@@ -1,3 +1,24 @@
+local ret = load("print(\"first test loadstring function.\")")
+print("the result ret is", ret)
+
+print("the result of running ret() is:")
+ret()
+
+print("the result of running common test is:")
+assert(load("print(\"common test load function.\")"))()
+
+local func = load("function func_test(str) print(\"str = \", str) end")
+print("before run func, functest =", fun_test)
+func()
+print("after run func, functest =", func_test, "\n")
+func_test("aaa")
+
+assert(load("i = i + 1", "third test"))()
+
+
+
+print("\n---------------------------------------------------\n")
+
 local n = 0
 
 w = 0
